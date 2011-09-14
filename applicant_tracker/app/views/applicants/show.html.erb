@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @applicant.first_name %>
+</p>
+
+<p>
+  <b>Middle initial:</b>
+  <%= @applicant.middle_initial %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @applicant.last_name %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%= @applicant.birth_date %>
+</p>
+
+<p>
+  <b>Ssn:</b>
+  <%= @applicant.ssn %>
+</p>
+
+
+<%= link_to 'Edit', edit_applicant_path(@applicant) %> |
+<%= link_to 'Back', applicants_path %>
